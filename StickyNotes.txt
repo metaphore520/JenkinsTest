@@ -235,6 +235,8 @@ switchMap
 192.168.1.13
 172.19.128.1
 
+DESKTOP-R1A1J4P\SQLEXPRESS
+
 
 
 git-- https://www.youtube.com/watch?v=1MVQYSlgXrI  
@@ -244,6 +246,7 @@ I Rebase -- https://www.youtube.com/watch?v=qsTthZi23VE
 Process vs Thread -- https://www.youtube.com/watch?v=4rLW7zg21gI
 SSL,TLS,HTTPS ---https://www.youtube.com/watch?v=j9QmMEWmcfo
 Docker Network -- https://www.youtube.com/watch?v=OU6xOM0SE4o
+.Net Core + SQL Server => https://www.youtube.com/watch?v=4V7CwC_4oss
 // canActivate
 // canActivateChild
 // canDeactivate
