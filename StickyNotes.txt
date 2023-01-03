@@ -1,3 +1,6 @@
+https://windowsreport.com/com-surrogate-windows-10/
+
+
 dC:\VSProjects\CoreWithAngular\CoreWithAngular\ClientApp\node_modules\@angular\material\prebuilt-themes\indigo-pink.css
 
 https://www.tutorialsteacher.com/linq/sample-linq-queries
@@ -179,7 +182,11 @@ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenk
 
 docker ps
 docker logs jenkins_containerId 
+docker stop $(docker ps --filter status=running -q)
+docker rm $(docker ps --filter status=exited -q)
+docker rmi $(docker images -q)
 
+ docker run -it ubuntu bash
 
 communication betn 2 container => docker network
 data exchange  betn 2 container => docker  volume
@@ -211,6 +218,9 @@ docker exec -it containerId*** sh // open the container with shell
 docker exec -it -u root containerId*** sh //   
 ifconfig
 
+docker inspect -f  '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' efe134cbe0e4
+
+
 netstate -an  | grep 80
 
 
@@ -220,6 +230,12 @@ Tour of Heroes,pull request,squash,fetch, ssh key, tag, fork,hotfixes,stash
 issue,gist,dsp,promise vs obs
 switchMap
 ,mergeAll,mergeMap,middleware  
+
+103.151.11.16
+192.168.1.13
+172.19.128.1
+
+
 
 git-- https://www.youtube.com/watch?v=1MVQYSlgXrI  
 sql-- https://www.youtube.com/watch?v=6UAU79FNBjQ
