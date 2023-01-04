@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+
+ stage('Initialize'){
+        def dockerHome = tool 'myDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }
         stage('One') {
                 steps {
                         echo 'Hi, this is Zulaikha from edureka'
@@ -33,6 +38,7 @@ pipeline {
                         stage('Integration test') {
                         agent {
                                 docker {
+
                                         reuseNode false
 					image 'hello-world'
                                         }
