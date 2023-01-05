@@ -224,6 +224,34 @@ docker inspect -f  '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ef
 netstate -an  | grep 80
 
 
+
+RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
+  && tar xzvf docker-17.04.0-ce.tgz \
+  && mv docker/docker /usr/local/bin \
+  && rm -r docker docker-17.04.0-ce.tgz
+
+
+
+
+docker volume create myvol1 
+docker volume ls
+docker volume inspect myvol1
+docker volume prune
+
+brew install mssql-tools
+sqlcmd -S 192.168.0.17,1443 -U SA -P 'Rpassw!1'
+
+To start the SQL Server Service enter the following command :
+net start “SQL Server (MSSQLSERVER)”
+To start the SQL Agent Service enter the following command:
+net start “SQL Server Agent (MSSQLSERVER)”
+
+
+net stop “SQL Server (MSSQLSERVER)”
+You will be notified that SQL Server Agent will also be stopped and prompted to continue. To continue enter: y
+To stop just the SQL Agent Service enter the following command:
+net stop “SQL Server Agent (MSSQLSERVER)”
+
 ---------------
 change detection,view encap,git,, standalone comp, interceptors, authGuard
 Tour of Heroes,pull request,squash,fetch, ssh key, tag, fork,hotfixes,stash
@@ -247,6 +275,8 @@ Process vs Thread -- https://www.youtube.com/watch?v=4rLW7zg21gI
 SSL,TLS,HTTPS ---https://www.youtube.com/watch?v=j9QmMEWmcfo
 Docker Network -- https://www.youtube.com/watch?v=OU6xOM0SE4o
 .Net Core + SQL Server => https://www.youtube.com/watch?v=4V7CwC_4oss
+Docker good practice ==> https://www.youtube.com/watch?v=8vXoMqWgbQQ
+Docker Compose ==> https://hackmamba.io/blog/2022/09/best-practices-when-using-docker-compose/
 // canActivate
 // canActivateChild
 // canDeactivate
@@ -528,7 +558,7 @@ https://www.entityframeworktutorial.net/EntityFramework5/attach-disconnected-ent
 
 
 
-
+                                        reuseNode false
 
 Scaffold-DbContext "Server=DESKTOP-R1A1J4P\SQLEXPRESS;Database=ProjectDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DbModels ContextDir "Data" -DataAnnotations -f
 
