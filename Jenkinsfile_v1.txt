@@ -4,7 +4,6 @@ pipeline {
         stage('One') {
                 steps {
 			 echo 'Docker Initialization'
-
 			 echo 'Docker Initialization Finished'
                         echo 'Hi, this is Zulaikha from edureka'
 			
