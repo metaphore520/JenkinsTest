@@ -1,3 +1,8 @@
+
+C:/Windows/System32/net.exe start "com.docker.service"
+
+
+
 https://windowsreport.com/com-surrogate-windows-10/
 
 
@@ -238,6 +243,13 @@ docker volume ls
 docker volume inspect myvol1
 docker volume prune
 
+netstat -a | find "2375"
+
+----------ERROR
+C:\Program Files\Docker\Docker\com.docker.service
+C:\ProgramData\DockerDesktop\tmp-d4w
+
+
 brew install mssql-tools
 sqlcmd -S 192.168.0.17,1443 -U SA -P 'Rpassw!1'
 
@@ -266,6 +278,9 @@ switchMap
 DESKTOP-R1A1J4P\SQLEXPRESS
 
 
+
+
+tasklist /v > "C:\Users\NABIL\Desktop\Docker\Running-Process-List.txt"
 
 git-- https://www.youtube.com/watch?v=1MVQYSlgXrI  
 sql-- https://www.youtube.com/watch?v=6UAU79FNBjQ
