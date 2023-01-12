@@ -1,4 +1,71 @@
 
+-v tcp://127.0.0.1:2375:/var/run/docker.sock
+
+docker run  -u 0 -p 8080:8080 -p 50000:50000  -d -v jenkins_home:/var/jenkins_home h1kkan/jenkins-docker:lts
+
+docker run -d --name sherpa  -v /var/run/docker.sock:/tmp/docker.sock -p 4550:4550 djenriquez/sherpa --allow
+
+Jenkinsfile (Declarative Pipeline)
+/* Requires the Docker Pipeline plugin */
+pipeline {
+    agent { docker { image 'node:16.17.1-alpine' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'node --version'
+            }
+        }
+    }
+}
+
+
+
+pipeline {
+    agent any
+    stages {
+        stage("first") {
+            script {
+                 foo = "bar"
+            }
+            sh "echo ${foo}"
+        }
+    }
+}
+
+
+
+09ded2123b8840d8a805b9d0a4fcedde
+bibinwilson/jenkins-slave:latest
+
+docker run -d \
+--name sherpa \
+-e CONFIG='[
+    { 
+        "Path" : "/",
+        "Access": "allow",
+        "Addresses": ["10.0.0.0/8", "192.168.0.0/16", "172.0.0.0/8"]
+    }
+]' \
+-v /var/run/docker.sock:/tmp/docker.sock \
+-p 4550:4550 \
+djenriquez/sherpa --allow
+
+
+
+docker run -d --name sherpa  -v /var/run/docker.sock:/tmp/docker.sock -p 4550:4550 djenriquez/sherpa --allow
+
+docker run -d --name sherpa -e CONFIG='[   { "Path" : "/", "Access": "allow",  "Addresses": [ "192.168.0.0/16"]    }]'  -p 4550:4550 -v /var/run/docker.sock:/tmp/docker.sock  djenriquez/sherpa --allow
+
+
+deefe1d5591a4580afb4d7ce81b395b8
+jenkins admin pass : d113ac44895c48f98fe6afde6c831525
+
+
+
+host_port_or_cidr|redacted
+
+
+
 C:/Windows/System32/net.exe start "com.docker.service"
 
 
@@ -228,6 +295,12 @@ docker inspect -f  '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ef
 
 netstate -an  | grep 80
 
+docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' d599ebba4a40 
+docker image tag server:latest myname/server:latest
+or
+docker image tag d583c3ac45fd myname/server:latest
+
+
 
 
 RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
@@ -242,6 +315,11 @@ docker volume create myvol1
 docker volume ls
 docker volume inspect myvol1
 docker volume prune
+
+
+
+docker-machine  create --driver=virtualbox test
+
 
 netstat -a | find "2375"
 
@@ -269,7 +347,7 @@ change detection,view encap,git,, standalone comp, interceptors, authGuard
 Tour of Heroes,pull request,squash,fetch, ssh key, tag, fork,hotfixes,stash
 issue,gist,dsp,promise vs obs
 switchMap
-,mergeAll,mergeMap,middleware  
+,mergeAll,mergeMap,middleware  docker machine
 
 103.151.11.16
 192.168.1.13
@@ -292,6 +370,14 @@ Docker Network -- https://www.youtube.com/watch?v=OU6xOM0SE4o
 .Net Core + SQL Server => https://www.youtube.com/watch?v=4V7CwC_4oss
 Docker good practice ==> https://www.youtube.com/watch?v=8vXoMqWgbQQ
 Docker Compose ==> https://hackmamba.io/blog/2022/09/best-practices-when-using-docker-compose/
+Docker Machine ==>https://www.youtube.com/watch?v=OJTOZsDvubw&list=PLZdsdjcJ44WWBHkRiBzspcfhf_YuIOCGn&index=1
+
+SSH Key Generation  Jenkins Container ------ https://blog.devgenius.io/how-i-can-make-ssh-from-server-to-jenkins-8dcc34647c6b
+
+Docker Slave -- https://hub.docker.com/r/jenkins/slave
+
+https://github.com/docker/machine/releases
+https://www.macadamian.com/learn/docker-machine-basic-examples/
 // canActivate
 // canActivateChild
 // canDeactivate
