@@ -1,5 +1,36 @@
+gMAIL APP PASS ---- j l o g r m i u j x b x l q g v
+
+
+
+Entity Framework Core Tools for the NuGet Package Manager Console in Visual Studio.
+
+Enables these commonly used commands:
+Add-Migration
+Bundle-Migration
+Drop-Database
+Get-DbContext
+Get-Migration
+Optimize-DbContext
+Remove-Migration
+Scaffold-DbContext
+Script-Migration
+Update-Database
+49154 49153
+
+nabiltemp234
+123456qwerty~_
+passphrase -- 1234qwer
+
+
 
 -v tcp://127.0.0.1:2375:/var/run/docker.sock
+
+Docker HUB Cred 
+
+nabiltemp
+123456qwerty
+
+Zulaikha12/git-test
 
 docker run  -u 0 -p 8080:8080 -p 50000:50000  -d -v jenkins_home:/var/jenkins_home h1kkan/jenkins-docker:lts
 
@@ -190,9 +221,53 @@ docker kill containerId
 docker rm containerId
 docker rmi imageId
 docker exec -it containerId bash
-docker commit containerId  newImageName
+
+
+cat etc/os-release
+
+
+
+
 docker export --output="name.tar" contId
 docker import /home/edureka/Downloads/a.tgz
+
+
+docker commit containerId  newImageName
+
+docker ps -a  |   wc -l
+docker run --rm -v ${PWD}:/myvol ubuntu  /bin/bash  -c "ls -lha  > /myvol/myfile.txt"
+docker run --rm -v  "C:\Users\thoma:/myvol"  ubuntu
+docker run --rm klutchell/rar
+docker run  --rm  -v   ${PWD}:/files klutchell/rar   a   /files/myrar.rar   /files/myfile.txt
+docker run  --rm  -v   ${PWD}:/files  -w /files klutchell/rar   a   myrar.rar   myfile.txt
+imagine cd after starting the command
+  //// to show a mount for a container 
+docker inspect containerName
+
+
+
+
+
+
+demodb ---  container name 
+
+docker volume ls
+docker stop demodb
+docker volume create demodb_copy
+
+docker run --rm --volumes-from demodb -v demodb_copy:/target alpine 
+sh -c  "cp  -rp   /var/lib/mysql/.   /target" 
+
+docker run -d --name demodb1 -v demodb_copy:/var/lib/mysql -p 3306:3306 mysql:5.7
+docker -it demodb1 mysql -u root -p
+
+
+
+
+
+
+
+
 
 docker-compose build
 docker-compose up
@@ -277,7 +352,11 @@ Docker ---
 ----------
 docker container rm -f   $(docker container ls  -aq)
 docker image rm -f   $(docker image ls  -aq)
+docker run   -u 0 --name sql_server_2022  -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOURPASSWORD" -e "MSSQL_PID=Express" -p 1433:1433   -d mcr.microsoft.com/mssql/server:2022-latest
 
+docker run   -u 0 --name sql_server_2022  -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOURPASSWORD12_" -e "MSSQL_PID=Express" -p 1433:1433   -it mcr.microsoft.com/mssql/server:2022-latest
+
+DESKTOP-R1A1J4P\SQLEXPRESS
 
 docker-compose build --no-cache  // force rebuild
 docker-compose ps 
@@ -292,8 +371,24 @@ ifconfig
 
 docker inspect -f  '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' efe134cbe0e4
 
+docker   build   -t   ytdocker:v1   -f   ContailerApp/Dockerfile
 
+
+
+
+
+“a” displays all connections and listening ports.
+“b” shows all executables involved in creating each listening port.
+“o” provides the owning process ID related to each of the connections.
+“n” shows the addresses and port numbers as numerals
+ 
 netstate -an  | grep 80
+netstat -ab
+netstat -ano
+
+
+
+
 
 docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' d599ebba4a40 
 docker image tag server:latest myname/server:latest
