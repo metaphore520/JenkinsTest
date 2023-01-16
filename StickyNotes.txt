@@ -1,0 +1,768 @@
+gMAIL APP PASS ---- j l o g r m i u j x b x l q g v
+
+
+
+Entity Framework Core Tools for the NuGet Package Manager Console in Visual Studio.
+
+Enables these commonly used commands:
+Add-Migration
+Bundle-Migration
+Drop-Database
+Get-DbContext
+Get-Migration
+Optimize-DbContext
+Remove-Migration
+Scaffold-DbContext
+Script-Migration
+Update-Database
+49154 49153
+
+nabiltemp234
+123456qwerty~_
+passphrase -- 1234qwer
+
+
+
+-v tcp://127.0.0.1:2375:/var/run/docker.sock
+
+Docker HUB Cred 
+
+nabiltemp
+123456qwerty
+
+Zulaikha12/git-test
+
+docker run  -u 0 -p 8080:8080 -p 50000:50000  -d -v jenkins_home:/var/jenkins_home h1kkan/jenkins-docker:lts
+
+docker run -d --name sherpa  -v /var/run/docker.sock:/tmp/docker.sock -p 4550:4550 djenriquez/sherpa --allow
+
+Jenkinsfile (Declarative Pipeline)
+/* Requires the Docker Pipeline plugin */
+pipeline {
+    agent { docker { image 'node:16.17.1-alpine' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'node --version'
+            }
+        }
+    }
+}
+
+
+
+pipeline {
+    agent any
+    stages {
+        stage("first") {
+            script {
+                 foo = "bar"
+            }
+            sh "echo ${foo}"
+        }
+    }
+}
+
+
+
+09ded2123b8840d8a805b9d0a4fcedde
+bibinwilson/jenkins-slave:latest
+
+docker run -d \
+--name sherpa \
+-e CONFIG='[
+    { 
+        "Path" : "/",
+        "Access": "allow",
+        "Addresses": ["10.0.0.0/8", "192.168.0.0/16", "172.0.0.0/8"]
+    }
+]' \
+-v /var/run/docker.sock:/tmp/docker.sock \
+-p 4550:4550 \
+djenriquez/sherpa --allow
+
+
+
+docker run -d --name sherpa  -v /var/run/docker.sock:/tmp/docker.sock -p 4550:4550 djenriquez/sherpa --allow
+
+docker run -d --name sherpa -e CONFIG='[   { "Path" : "/", "Access": "allow",  "Addresses": [ "192.168.0.0/16"]    }]'  -p 4550:4550 -v /var/run/docker.sock:/tmp/docker.sock  djenriquez/sherpa --allow
+
+
+deefe1d5591a4580afb4d7ce81b395b8
+jenkins admin pass : d113ac44895c48f98fe6afde6c831525
+
+
+
+host_port_or_cidr|redacted
+
+
+
+C:/Windows/System32/net.exe start "com.docker.service"
+
+
+
+https://windowsreport.com/com-surrogate-windows-10/
+
+
+dC:\VSProjects\CoreWithAngular\CoreWithAngular\ClientApp\node_modules\@angular\material\prebuilt-themes\indigo-pink.css
+
+https://www.tutorialsteacher.com/linq/sample-linq-queries
+https://rxjs.dev/api/operators/catchError
+
+https://stackoverflow.com/questions/56824188/how-do-i-get-ngmodel-of-children-in-parent-directive
+
+https://codeomelet.com/posts/exploring-bootstrap-5-with-angular-creating-dropdown
+
+https://jsonplaceholder.typicode.com/posts/
+
+https://www.entityframeworktutorial.net/efcore/changetracker-in-ef-core.aspx
+
+https://www.tutorialsteacher.com/typescript/typescript-generic
+
+https://hub.docker.com/settings/general
+
+https://angular.io/guide/ngmodule-api
+
+https://www.tutorialspoint.com/typescript/typescript_interfaces.htm
+
+https://reqbin.com/req/c-skhwmiil/curl-flags-example
+from s in db.Todo
+group s by s.ID into sg
+
+npm install jquery popper.js
+npm install bootstrap
+ng generate guard Auth
+ng generate interceptor  Auth
+
+
+https://procodeguide.com/dotnet/migrate-net-framework-to-net-core/
+-----------------------------------
+tructural directives shape or reshape the DOM's structure, by adding, removing, and manipulating elements. For more information about structural directives, 
+-------------------------------------------------
+Setuping Angular
+---------------------------------
+npm install -g @angular/cli
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+-----------------------------------------------------------
+DOCKER COMMANDS
+----
+docker --version
+docker run hello-world
+docker images
+docker pull ubuntu
+docker run -it -d ubuntu
+docker ps -a
+docker exec -it containerId  bash
+docker stop containerId
+docker commit containerId zulaikha/ubuntu
+docker login
+docker push zulaikha/ubuntu
+docker rm containerId
+docker ps -a
+docker rmi  containerId
+mkdir webappilcation
+start notepad++
+docker compose up
+pwd
+------
+
+docker build -t myapacheimage .      
+ --build image from  dockerfile
+docker run -p 80:80 --name=App1Container  myapacheimage    -- creating container from image
+docker images    -----------------------------
+
+DOCKER FILE
+-----
+# FROM [image name]
+   FROM ubuntu
+
+# RUN [command]
+   RUN apt-get install -y riak
+
+#CMD application "argument","argument"
+  CMD "echo" "Welcome"
+
+# ENTRYPOINT echo 
+   CMD "WELCOME"
+#ADD [SOURCE DIREC OR URL] [DEST DIRECTORY]
+
+# ENV key value
+   ENV SERVER_WORKER 4
+
+# WORKDIR /path WORKDIR ~/
+
+#EXPOSE [PORT]
+  EXPOSE 8080
+
+#MAINTAINER [NAME]
+  MAINTAINER AUTHORS_NAME
+
+#USER [UID]  SET USER NAME
+  USER  751
+# VOLUME ["/DIR_1","DIR_2"]
+   VOLUME ["/MY_FILES "]
+---------------------
+DOCKER COMMANDS
+--------------------------
+docker --version
+docker --help
+docker images
+docker pull ubuntu
+docker run ubuntu
+docker build -t MyUbuntuImage .
+docker login
+docker push rahat/MyUbuntuImage
+docker ps
+docker ps -a
+docker stop containerId
+docker kill containerId
+docker rm containerId
+docker rmi imageId
+docker exec -it containerId bash
+
+
+cat etc/os-release
+
+
+
+
+docker export --output="name.tar" contId
+docker import /home/edureka/Downloads/a.tgz
+
+
+docker commit containerId  newImageName
+
+docker ps -a  |   wc -l
+docker run --rm -v ${PWD}:/myvol ubuntu  /bin/bash  -c "ls -lha  > /myvol/myfile.txt"
+docker run --rm -v  "C:\Users\thoma:/myvol"  ubuntu
+docker run --rm klutchell/rar
+docker run  --rm  -v   ${PWD}:/files klutchell/rar   a   /files/myrar.rar   /files/myfile.txt
+docker run  --rm  -v   ${PWD}:/files  -w /files klutchell/rar   a   myrar.rar   myfile.txt
+imagine cd after starting the command
+  //// to show a mount for a container 
+docker inspect containerName
+
+
+
+
+
+
+demodb ---  container name 
+
+docker volume ls
+docker stop demodb
+docker volume create demodb_copy
+
+docker run --rm --volumes-from demodb -v demodb_copy:/target alpine 
+sh -c  "cp  -rp   /var/lib/mysql/.   /target" 
+
+docker run -d --name demodb1 -v demodb_copy:/var/lib/mysql -p 3306:3306 mysql:5.7
+docker -it demodb1 mysql -u root -p
+
+
+
+
+
+
+
+
+
+docker-compose build
+docker-compose up
+
+docker swarm init - -advertise-addr 192.168.56.101 
+docker swarm join
+docker swarm join-token
+docker swarm leave
+
+docker service ls
+docker service ps
+docker service scale
+docker service stop
+docker service logs
+docker service rm
+
+docker service create --name "Ang App" 
+ -p 4200:4200  --mode global demoapp1
+
+docker service ps service_name 
+docker service scale service_name=5
+docker node update --availability drain Manager-1
+
+                                      
+docker service create --name Apache2 --mode global  -d -p 8003:80 httpd
+
+docker network create -d overlay myoverlay1 
+docker network rm network_name
+ip link set enp0s3 promisc on
+
+docker service create --name webapp1 -d --network myoverlay1 -p 8001:80 hshar/webapp
+docker service create --name mysqlC -d --network myoverlay1 -p 3306:3306 hshar/mysql:5.5
+docker ps
+
+
+mysql -u root -p edureka 
+CREATE DATABASE HandsOn
+USE HandsOn
+CREATE TABLE courses   
+(
+coursename  VARCHAR(15),courseid VARCHAR(12) 
+);
+
+
+mysql -u root -p edureka
+show tables
+USE HandsOn
+show tables
+select * from courses
+docker service scale webapp1=5
+
+docker service ps service_name
+
+
+ docker Network,Compose,Swarm,Volume
+
+
+docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+
+docker ps
+docker logs jenkins_containerId 
+docker stop $(docker ps --filter status=running -q)
+docker rm $(docker ps --filter status=exited -q)
+docker rmi $(docker images -q)
+
+ docker run -it ubuntu bash
+
+communication betn 2 container => docker network
+data exchange  betn 2 container => docker  volume
+
+
+Docker tutorial ----- https://www.youtube.com/playlist?list=PLefG3VDSLxSzboMuyD1BNfa3_yNWthR7r
+
+--------------
+Jenkins
+--------------
+java -jar jekins .war --httpPort=9191
+
+
+---------------------------
+Docker ---
+----------
+docker container rm -f   $(docker container ls  -aq)
+docker image rm -f   $(docker image ls  -aq)
+docker run   -u 0 --name sql_server_2022  -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOURPASSWORD" -e "MSSQL_PID=Express" -p 1433:1433   -d mcr.microsoft.com/mssql/server:2022-latest
+
+docker run   -u 0 --name sql_server_2022  -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOURPASSWORD12_" -e "MSSQL_PID=Express" -p 1433:1433   -it mcr.microsoft.com/mssql/server:2022-latest
+
+DESKTOP-R1A1J4P\SQLEXPRESS
+
+docker-compose build --no-cache  // force rebuild
+docker-compose ps 
+docker-compose down
+docker compose up -d  // build and run in  background process
+
+docker network ls
+docker exec -it containerId*** sh // open the container with shell 
+
+docker exec -it -u root containerId*** sh //   
+ifconfig
+
+docker inspect -f  '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' efe134cbe0e4
+
+docker   build   -t   ytdocker:v1   -f   ContailerApp/Dockerfile
+
+
+
+
+
+“a” displays all connections and listening ports.
+“b” shows all executables involved in creating each listening port.
+“o” provides the owning process ID related to each of the connections.
+“n” shows the addresses and port numbers as numerals
+ 
+netstate -an  | grep 80
+netstat -ab
+netstat -ano
+
+
+
+
+
+docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' d599ebba4a40 
+docker image tag server:latest myname/server:latest
+or
+docker image tag d583c3ac45fd myname/server:latest
+
+
+
+
+RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
+  && tar xzvf docker-17.04.0-ce.tgz \
+  && mv docker/docker /usr/local/bin \
+  && rm -r docker docker-17.04.0-ce.tgz
+
+
+
+
+docker volume create myvol1 
+docker volume ls
+docker volume inspect myvol1
+docker volume prune
+
+
+
+docker-machine  create --driver=virtualbox test
+
+
+netstat -a | find "2375"
+
+----------ERROR
+C:\Program Files\Docker\Docker\com.docker.service
+C:\ProgramData\DockerDesktop\tmp-d4w
+
+
+brew install mssql-tools
+sqlcmd -S 192.168.0.17,1443 -U SA -P 'Rpassw!1'
+
+To start the SQL Server Service enter the following command :
+net start “SQL Server (MSSQLSERVER)”
+To start the SQL Agent Service enter the following command:
+net start “SQL Server Agent (MSSQLSERVER)”
+
+
+net stop “SQL Server (MSSQLSERVER)”
+You will be notified that SQL Server Agent will also be stopped and prompted to continue. To continue enter: y
+To stop just the SQL Agent Service enter the following command:
+net stop “SQL Server Agent (MSSQLSERVER)”
+
+---------------
+change detection,view encap,git,, standalone comp, interceptors, authGuard
+Tour of Heroes,pull request,squash,fetch, ssh key, tag, fork,hotfixes,stash
+issue,gist,dsp,promise vs obs
+switchMap
+,mergeAll,mergeMap,middleware  docker machine
+
+103.151.11.16
+192.168.1.13
+172.19.128.1
+
+DESKTOP-R1A1J4P\SQLEXPRESS
+
+
+
+
+tasklist /v > "C:\Users\NABIL\Desktop\Docker\Running-Process-List.txt"
+
+git-- https://www.youtube.com/watch?v=1MVQYSlgXrI  
+sql-- https://www.youtube.com/watch?v=6UAU79FNBjQ
+CI/CD ---- https://www.youtube.com/watch?v=qP8kir2GUgo
+I Rebase -- https://www.youtube.com/watch?v=qsTthZi23VE
+Process vs Thread -- https://www.youtube.com/watch?v=4rLW7zg21gI
+SSL,TLS,HTTPS ---https://www.youtube.com/watch?v=j9QmMEWmcfo
+Docker Network -- https://www.youtube.com/watch?v=OU6xOM0SE4o
+.Net Core + SQL Server => https://www.youtube.com/watch?v=4V7CwC_4oss
+Docker good practice ==> https://www.youtube.com/watch?v=8vXoMqWgbQQ
+Docker Compose ==> https://hackmamba.io/blog/2022/09/best-practices-when-using-docker-compose/
+Docker Machine ==>https://www.youtube.com/watch?v=OJTOZsDvubw&list=PLZdsdjcJ44WWBHkRiBzspcfhf_YuIOCGn&index=1
+
+SSH Key Generation  Jenkins Container ------ https://blog.devgenius.io/how-i-can-make-ssh-from-server-to-jenkins-8dcc34647c6b
+
+Docker Slave -- https://hub.docker.com/r/jenkins/slave
+
+https://github.com/docker/machine/releases
+https://www.macadamian.com/learn/docker-machine-basic-examples/
+// canActivate
+// canActivateChild
+// canDeactivate
+// canMatch
+// resolve
+//canLoad
+----------------------------------------------------
+ -- Add the SELECT statement with parameter references here
+    select c.courseid, c.coursename,c.Location, c.TeacherId
+    
+	from student s 
+		
+	left outer join 
+	
+	studentcourse sc 
+	
+	on	sc.studentid = s.studentid 
+    
+	left outer join 
+	
+	course c 
+	
+	on c.courseid = sc.courseid
+        
+	where s.studentid = @studentID
+------------------------------------------------
+Table-valued function is similar to the stored procedure, except for one key difference: the result of TVF is composable which means that it can be used in the LINQ-to-Entity query.
+------------------------------------------------
+NORMALIZATION, JOIN , VIEW
+--------------------------------------------
+Unlike Stored Procedure, Function returns an only a single value.
+
+Unlike Stored Procedure, Function accepts only input parameters.
+
+Unlike Stored Procedure, Function is not used to Insert, Update, Delete data in a database table(s).
+
+Like Stored Procedure, Function can be nested up to 32 levels.
+
+User Defined Function can have up to 1023 input parameters while a Stored Procedure can have up to 2100 input parameters.
+
+User Defined Function can't return XML Data Type.
+
+User Defined Function doesn't support Exception handling.
+
+User Defined Function can call only Extended Stored Procedure.
+
+User Defined Function doesn't support set options like set ROWCOUNT etc.
+--------------------------------------------------------------
+ASP.NET HandlerASP.NET Module,  
+------------------------------------------------------
+IEnumerable,IList,IQueryble,Deferred Execution,Lazy Loading
+Expression, Expression Trees
+--------
+https://www.dotnettricks.com/learn/linq/difference-between-deferred-execution-and-immediate-execution
+------------------------------------
+In LINQ to query data from database and collections, we use IEnumerable and IQueryable for data manipulation. IEnumerable is inherited by IQueryable, Hence IQueryable has all the features of IEnumerable and except this, it has its own features. Both have its own importance to query data and data manipulation. Let’s see both the features and take advantage of both the features to boost your LINQ Query performance.
+--------------------------------------
+LINQ queries uses extension methods for classes that implement IEnumerable or IQueryable interface. The Enumerable and Queryable are two static classes that contain extension methods to write LINQ queries
+---------------------------------------------------------
+TagHelperClass, Middleware Class,Startup Class
+-------------------------------------
+ The above DbContext methods are introduced in EF Core (they were not available in EF 6 or prior). Both DbContext and DbSet methods perform the same operation. Which one you use depends on your coding pattern and preference.
+-------------------------------------------
+In Entity Framework Core, the ModelBuilder class acts as a Fluent API. By using it, we can configure many different things, as it provides more configuration options than data annotation attributes.
+-----------------------------------
+Entity Framework Fluent API is used to configure domain classes to override conventions.
+---------------------------------------------------------------------
+S = {ad,ad1.ad2}
+
+ad = {s1,s2,s3}
+-------------------------------------------
+EF Core creates a clustered index on Primarykey columns and a non-clustered index on ForeignKey columns, by default
+-----------------------------------------------
+EF Core will create the primary key column for the property named Id or <Entity Class Name>Id (case insensitive). For example, EF Core will create a column as PrimaryKey in the Students table if the Student class includes a property named id, ID, iD, Id, studentid, StudentId, STUDENTID, or sTUdentID.
+
+
+
+
+-----------------------------------------------------------------
+DbContext.Entry()
+DbSet.Add()
+DbSet.Attach()
+--------------------------------
+Execute Raw SQL Queries in Entity Framework 6
+-------------------
+DbSet.SqlQuery()
+DbContext.Database.SqlQuery()
+DbContext.Database.ExecuteSqlCommand()
+------------------------------------------------------
+Query() -------- Quering Related Data
+
+when lazy loading is disabled use these methods to load related entities 
+
+
+
+ context.Entry(student).Reference(s => s.StudentAddress).Load(); // loads StudentAddress
+    context.Entry(student).Collection(s => s.StudentCourses).Load(); // loads Courses collection 
+
+
+using (var context = new SchoolContext())
+{
+    var student = context.Students
+                        .Where(s => s.FirstName == "Bill")
+                        .FirstOrDefault<Student>();
+    
+    context.Entry(student)
+           .Collection(s => s.StudentCourses)
+           .Query()
+               .Where(sc => sc.CourseName == "Maths")
+               .FirstOrDefault();
+}
+------------------------------------------------
+Explicit Loading
+
+var student = context.Students
+                        .Where(s => s.FirstName == "Bill")
+                        .FirstOrDefault<Student>();
+
+    context.Entry(student).Reference(s => s.StudentAddress).Load(); // loads StudentAddress
+    context.Entry(student).Collection(s => s.StudentCourses).Load(); // loads Courses collection
+------------------------
+Rules for lazy loading:
+context.Configuration.ProxyCreationEnabled should be true.
+context.Configuration.LazyLoadingEnabled should be true.
+Navigation property should be defined as public, virtual. Context will NOT do lazy loading if the property is not defined as virtual.
+------------------------------------------------------
+var anonymousObjResult = ctx.Students
+                                .Where(st => st.Standard == 1)
+                                .Select(st => new { 
+                                            Id = st.StudentId, 
+                                            Name = st.StudentName });
+
+    foreach (var obj in anonymousObjResult)
+    {
+        Console.Write(obj.Name);
+    }
+-------------------------------------------------------------------------------
+ var anonymousObjResult = from s in ctx.Students
+                             where s.StandardId == 1
+                             select new { 
+                                Id = st.StudentId, 
+                                Name = st.StudentName
+                             };
+
+    foreach (var obj in anonymousObjResult)
+    {
+        Console.Write(obj.Name);
+    }
+
+----------------------------------------------------------------------------------
+using (var ctx = new SchoolDBEntities())
+{    
+    var students = ctx.Students.GroupBy(s => s.StandardId);
+
+    foreach (var groupItem in students)
+    {
+        Console.WriteLine(groupItem.Key);
+
+        foreach (var stud in groupItem)
+        {
+            Console.WriteLine(stud.StudentId);
+        }
+
+    }
+}
+-------------------------------
+The difference between First and FirstOrDefault is that First() will throw an exception if there is no result data for the supplied criteria, whereas FirstOrDefault() returns a default value (null) if there is no result data
+------------------------------------
+The DbSet class is derived from IQuerayable. So, we can use LINQ for querying against DbSet, which will be converted to an SQL query. EF API executes this SQL query to the underlying database, gets the flat result set, converts it into appropriate entity objects and returns it as a query result.
+--------------------------------------------------------------------------------------
+one to one 
+one to many
+many to many
+
+
+
+TITLE: Microsoft SQL Server Management Studio
+------------------------------
+
+An error occurred when attaching the database(s).  Click the hyperlink in the Message column for details.
+
+------------------------------
+BUTTONS:
+
+OK
+------------------------------
+
+
+
+
+
+
+-----------------------------------------------------------
+PMC COMMands
+
+Get-Help entityframework	Displays information about entity framework commands.
+Add-Migration <migration name>	Creates a migration by adding a migration snapshot.
+Remove-Migration	Removes the last migration snapshot.
+Update-Database	Updates the database schema based on the last migration snapshot.
+Script-Migration	Generates a SQL script using all the migration snapshots.
+Scaffold-DbContext	Generates a DbContext and entity type classes for a specified database. This is called reverse engineering.
+Get-DbContext	 Gets information about a DbContext type.
+Drop-Database    	Drops the database.
+
+
+
+-----------------------------------------------
+add-migration <migration name>	Add <migration name>	Creates a migration by adding a migration snapshot.
+Remove-migration	Remove	Removes the last migration snapshot.
+Update-database	Update	Updates the database schema based on the last migration snapshot.
+Script-migration	Script	Generates a SQL script using all the migration snapshots.
+-----------------------------------------------------------
+https://www.youtube.com/watch?v=iSWxny5MUY8
+--------------------------------------------------------
+DbContext.Entry();
+
+DbContext.Attach();
+DbSet.Entry();
+
+DbContext.Add();
+DbSet.Add();
+------------------------------------------------
+Entity Framework Core provides different ways to add, update, or delete data in the underlying database. An entity contains data in its scalar property will be either inserted or updated or deleted based on its EntityState.
+-----------------------------------------------------------------------------
+The Include() extension method cannot be used after the DbSet.Find() method. E.g. context.Students.Find(1).Include() is not possible in EF Core 2.0.
+-------------------------------------------------------------------------
+The Include() extension method can also be used after the FromSql() method, as shown below.
+-------------------------
+The DbContext class is an integral part of Entity Framework. An instance of DbContext represents a session with the database
+
+-----------------------------------------------------------------
+Entityframework Package
+-----------------------------------------------------------------
+Microsoft.EntityframeworkCore
+Microsoft.EntityframeworkCore.SqlServer
+Microsoft.EntityframeworkCore.Tools
+Microsoft.EntityframeworkCore.Tools.DotNet
+Microsoft.EntityFrameworkCore.ChangeTracking
+Microsoft.EntityFrameworkCore.EntityState
+
+
+
+
+
+
+C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\ItemTemplates\CSharp\Code\1033\Interface
+
+
+
+
+Scaffold-DbContext  Command
+----------------------------------------------
+Scaffold-DbContext [-Connection] [-Provider] [-OutputDir] [-Context] [-Schemas>] [-Tables>] 
+                    [-DataAnnotations] [-Force] [-Project] [-StartupProject] [<CommonParameters>]
+
+
+
+DotNet CLI Tool Reference
+------------------------------------------------------------
+dotnet ef dbcontext scaffold "Server=.\SQLEXPRESS;Database=SchoolDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.entityframeworktutorial.net/EntityFramework5/attach-disconnected-entity-graph.aspx
+
+
+
+
+
+
+                                        reuseNode false
+
+Scaffold-DbContext "Server=DESKTOP-R1A1J4P\SQLEXPRESS;Database=ProjectDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DbModels ContextDir "Data" -DataAnnotations -f
+
+
+
+
+
+PM> Scaffold-DbContext "Server=108.xx.xx.xx\xxxx;Database=ScaffoldDbComputed;Trusted_Connection=False;TrustServerCertificate=True;User Id=xxxx;Password=xxxx" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "MyScaffold" -ContextDir "MyScaffold" -Namespace ScaffoldDbComputed -Force
+
+
+IEnumerable, async, await,signalr,AddTransient,Behavior

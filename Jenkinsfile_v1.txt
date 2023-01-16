@@ -1,0 +1,50 @@
+pipeline {
+    agent any
+    stages {
+        stage('One') {
+                steps {
+			 echo 'Docker Initialization'
+			 echo 'Docker Initialization Finished'
+                        echo 'Hi, this is Zulaikha from edureka'
+			
+                }
+        }
+	    stage('Two'){
+		    
+		steps {
+			input('Do you want to proceed?')
+        }
+	    }
+        stage('Three') {
+                when {
+                        not {
+                                branch "master"
+                        }
+                }
+                steps {
+			echo "Hello"
+                        }
+        }
+        stage('Four') {
+                parallel {
+                        stage('Unit Test') {
+                                steps{
+                                        echo "Running the unit test..."
+                                }
+                        }
+                        stage('Integration test') {
+                        agent {
+                                docker {
+
+
+					image 'hello-world'
+                                        }
+			}
+				steps {
+					echo 'Running the integration test..'
+				}
+                               
+			}  }
+        }
+    }
+}
