@@ -1,3 +1,258 @@
+join  == inner join
+left join == left outer join
+
+
+async await sql db design dp pro
+
+
+routing,comp commu, context
+
+"Server=DESKTOP-R1A1J4P\\SQLEXPRESS;Database=Customer;Trust Server Certificate=true;Trusted_Connection=True;"
+
+
+Scaffold-DbContext "Server=DESKTOP-R1A1J4P\SQLEXPRESS;Database=Student;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DbModels ContextDir "DbContextFile" -DataAnnotations -f
+
+Scaffold-DbContext "Server=DESKTOP-R1A1J4P\SQLEXPRESS;Database=AssesmentDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DbModels ContextDir "DbContextFile" -DataAnnotations -f
+
+
+
+
+
+
+Scaffold-DbContext "Server=DESKTOP-R1A1J4P\SQLEXPRESS;Database=Student;Trust Server Certificate=true;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DbModels -ContextDir "DbContextFile" -DataAnnotations -f
+
+
+
+Scaffold-DbContext "Server=DESKTOP-R1A1J4P\SQLEXPRESS;Database=AssesmentDB;Trust Server Certificate=true;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DbModels -ContextDir "DbContextFile" -DataAnnotations -f
+
+https://drive.google.com/file/d/1inADJaUjYZV1njCKetiBM1ofz0R-gf5c/view?usp=share_link
+
+
+
+download image from  url in asp.net core web api
+
+
+github
+stackblitz
+
+
+
+01310339039
+01310338522
+
+
+ALL, ANY, EXISTS, insert into, IFNULL(NAME,''), COALESCE,CONVERT,
+OVER (), UPPER,  SUBSTRING(EmpLname, 1, 4) ,  CONCAT(Nama,'',Id)
+NOT IN, IN, 
+
+
+
+https://mindmajix.com/net-interview-questions#for-fresher
+
+15. Discuss the difference between constants and read-only variables?
+Ans: Constant fields are created using the const keyword and their value remains the same throughout the program. The Read-only fields are created using a read-only keyword and their value can be changed. Const is a compile-time constant while Read-only is a runtime constant.
+
+
+
+
+Encapsulation: Creation of self-contained modules that bind together the data and the functions that access that data.
+Abstraction: Handles complexity and allows the implementation of further complex logic without disclosing it to the user object.
+Polymorphism: Operation performed depends upon the context at runtime to facilitate easy integration.
+Inheritance:  Creation of classes in a hierarchy to enable a class to inherit behavior from its parent class allowing reuse of code.
+
+
+
+Filter type	Function
+OutputCache	It caches the output of a controller action for a specific period
+HandleError	It handles errors raised when a controller action executes
+Authorise	It enables you to restrict access to a particular user or role
+
+Check the following points to understand how ASP.NET is different from ASP.NET MVC:
+
+ASP.NET is a web platform, whereas ASP.NET MVC is an application framework for building web applications.
+ASP.NET offers a layer that resides on the web server's top layer for creating web applications and services. Conversely, ASP.NET MVC framework stays on top of ASP.NET to design web applications with the help of ASP.NET's APIs.
+ASP.NET is based on a simple event-driven programming model, whereas ASP.NET MVC is based on the "Model-View-Controller" architectural model.
+
+
+
+Whenever a new application is started we are required to take care of the below points:
+
+Dependency Injection
+Configuration
+Logging
+Service lifetime management
+.NET generic host called ‘HostBuilder’ helps us to manage all the above tasks since it is built on the original abstraction of these tools.
+
+
+Yes. ASP.NET core application works with full .NET framework via the .NET standard library
+
+
+
+
+async programming ,signal r
+react,interview,sql,oop,basic dj,design,dry,
+
+readme
+image
+db name 
+db connectiostring api
+assign ment
+dapper
+swagger
+delete test--
+github 
+
+// db script
+async await
+db generation
+
+
+
+
+git test conn paron  image
+
+
+
+
+edit
+delete
+
+
+unit test
+servuce frint end
+
+https://stackoverflow.com/questions/69722872/asp-net-core-6-how-to-access-configuration-during-startup
+file upload asp.net core mvc
+
+readonly,transient,config,repository check,configuring model,
+partialView, renderpartial,RazorPage vs Razor view
+
+
+
+
+https://app.netlify.com/sites/admirable-cupcake-7e37bd/overview
+
+
+
+
+https://github.com/metaphore520/FactoryManagement_Frontend
+
+https://github.com/metaphore520/FactoryManagement_Backend.git
+
+https://github.com/metaphore520/quiz-app-with-react.git
+
+
+https://github.com/metaphoree?tab=repositories
+
+github -- https://github.com/metaphore520
+
+
+
+linked in  --- https://bd.linkedin.com/in/nabil-sarwar-rahat
+
+codeforces -- https://codeforces.com/profile/metaphore
+
+leetcode -- https://leetcode.com/metaphore2/
+
+
+React Higher Order Components
+React  Render Props
+
+
+git rm .env.local  --cached
+
+
+
+To export “catalogapp” image run the following command
+docker save -o D:\Images\catalogapp.tar catalogapp
+
+Run the following command to load images. You will see two images is created with dev and latest tag.
+PS D:\Images> docker load -i catalogapp.tar
+
+
+docker save  -o   C:\Users\NABIL\Desktop\Docker\nodeless.tar node
+
+
+
+
+To export “catalogapp_container” container run the following command
+docker export -o D:\Containers\catalogapp_container.tar catalogapp_container
+
+
+Run the following command to load images. You will see two images is created with dev and latest tag.
+PS D:\Containers> docker import catalogapp_container.tar catalogapp:imp
+
+
+
+
+
+
+eval  $docker-machine env  machine_name
+docker-machine stop machine_name
+docker-machine start machine_name
+docker-machine ip  machine_name
+
+
+
+docker image prune
+docker system prune 
+docker system prune --volumes
+docker system prune --volumes --all
+ 
+
+
+docker-machine create -d virtualbox --virtualbox-memory=4096  --virtualbox-cpu-count=4 --virtualbox-disk-size=40960  --virtualbox-no-vtx-check default
+                // {
+                //   "type": "initial",
+                //   "maximumWarning": "500kb",
+                //   "maximumError": "1mb"
+                // },
+
+
+
+sqlcmd -S 127.0.0.1 -U sa -P mypassCODE90_
+
+
+
+npm uninstall -g create-react-app
+npx clear-npx-cache
+npx create-react-app my-app
+
+
+
+
+
+Dockerfile syntax:
+ENV <key>=<value> ...
+
+ENV ServerName=db
+ENV Database=Employee
+ENV UserName=SA
+ENV Password=YOURPASSWORD12_
+
+
+Docker Compose File Syntax:
+
+Map syntax:
+
+
+environment:
+  RACK_ENV: development
+  SHOW: "true"
+  USER_INPUT:
+Array syntax:
+
+
+environment:
+  - RACK_ENV=development
+  - SHOW=true
+  - USER_INPUT
+
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U sa
+
+
+
 gMAIL APP PASS ---- j l o g r m i u j x b x l q g v
 
 
@@ -352,9 +607,14 @@ Docker ---
 ----------
 docker container rm -f   $(docker container ls  -aq)
 docker image rm -f   $(docker image ls  -aq)
-docker run   -u 0 --name sql_server_2022  -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOURPASSWORD" -e "MSSQL_PID=Express" -p 1433:1433   -d mcr.microsoft.com/mssql/server:2022-latest
 
 docker run   -u 0 --name sql_server_2022  -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOURPASSWORD12_" -e "MSSQL_PID=Express" -p 1433:1433   -it mcr.microsoft.com/mssql/server:2022-latest
+
+
+docker run   --name api -p 8080:80   api:latest
+
+
+docker run   -u 0 --name db  -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YOURPASSWORD12_"  -p 1433:1433   -it mcr.microsoft.com/mssql/server:2022-latest
 
 DESKTOP-R1A1J4P\SQLEXPRESS
 
@@ -369,7 +629,8 @@ docker exec -it containerId*** sh // open the container with shell
 docker exec -it -u root containerId*** sh //   
 ifconfig
 
-docker inspect -f  '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' efe134cbe0e4
+docker inspect -f  "{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}"
+ efe134cbe0e4
 
 docker   build   -t   ytdocker:v1   -f   ContailerApp/Dockerfile
 
@@ -442,7 +703,7 @@ change detection,view encap,git,, standalone comp, interceptors, authGuard
 Tour of Heroes,pull request,squash,fetch, ssh key, tag, fork,hotfixes,stash
 issue,gist,dsp,promise vs obs
 switchMap
-,mergeAll,mergeMap,middleware  docker machine
+,mergeAll,mergeMap,middleware  docker machine, CodeFirst, multi stagebuild
 
 103.151.11.16
 192.168.1.13
@@ -452,7 +713,7 @@ DESKTOP-R1A1J4P\SQLEXPRESS
 
 
 
-
+Organize React Project ---> https://www.youtube.com/watch?v=UUga4-z7b6s
 tasklist /v > "C:\Users\NABIL\Desktop\Docker\Running-Process-List.txt"
 
 git-- https://www.youtube.com/watch?v=1MVQYSlgXrI  
@@ -466,10 +727,15 @@ Docker Network -- https://www.youtube.com/watch?v=OU6xOM0SE4o
 Docker good practice ==> https://www.youtube.com/watch?v=8vXoMqWgbQQ
 Docker Compose ==> https://hackmamba.io/blog/2022/09/best-practices-when-using-docker-compose/
 Docker Machine ==>https://www.youtube.com/watch?v=OJTOZsDvubw&list=PLZdsdjcJ44WWBHkRiBzspcfhf_YuIOCGn&index=1
-
+Dotnet + Docker  ==> https://www.youtube.com/watch?v=-mWAAp_AlMc
 SSH Key Generation  Jenkins Container ------ https://blog.devgenius.io/how-i-can-make-ssh-from-server-to-jenkins-8dcc34647c6b
+C# Must Read ----- https://www.youtube.com/@IAmTimCorey/videos?view=0&sort=p&shelf_id=0
 
 Docker Slave -- https://hub.docker.com/r/jenkins/slave
+
+
+Anglar auth flow  --  https://www.youtube.com/watch?v=EmLlk5HmUPs
+
 
 https://github.com/docker/machine/releases
 https://www.macadamian.com/learn/docker-machine-basic-examples/
@@ -737,22 +1003,7 @@ dotnet ef dbcontext scaffold "Server=.\SQLEXPRESS;Database=SchoolDB;Trusted_Conn
 
 
 
-
-
-
-
-
-
-
-
-
-
 https://www.entityframeworktutorial.net/EntityFramework5/attach-disconnected-entity-graph.aspx
-
-
-
-
-
 
                                         reuseNode false
 
@@ -766,3 +1017,22 @@ PM> Scaffold-DbContext "Server=108.xx.xx.xx\xxxx;Database=ScaffoldDbComputed;Tru
 
 
 IEnumerable, async, await,signalr,AddTransient,Behavior
+
+
+
+
+// <div className="App">
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header> */}
